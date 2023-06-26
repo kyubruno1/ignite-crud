@@ -1,0 +1,22 @@
+{
+  "name": "ignite-crud",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "��#\u0000 \u0000i\u0000g\u0000n\u0000i\u0000t\u0000e\u0000-\u0000c\u0000r\u0000u\u0000d\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyubruno1/ignite-crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyubruno1/ignite-crud/issues"
+  },
+  "homepage": "https://github.com/kyubruno1/ignite-crud#readme"
+}
