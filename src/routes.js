@@ -33,6 +33,10 @@ export const routes = [
     handler: (req, res) => {
       const { title, description } = req.body
 
+      if (!title || !description) {
+        return res.writeHead(400).end()
+      }
+
       const task = {
         id: randomUUID(),
         title,
@@ -53,6 +57,10 @@ export const routes = [
     handler: (req, res) => {
       const { id } = req.params
       const { title, description, created_at } = req.body
+
+      if (database.select('tasks', id ? { id } : null).length == 0) {
+        return res.writeHead(400).end()
+      }
 
       database.update('tasks', id, {
         title,
